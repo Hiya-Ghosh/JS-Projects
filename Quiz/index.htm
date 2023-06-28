@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <!-- 2nd div so that we can have some padding between text and the box -->
+        <div class="quiz-header">
+        <h2 id="ques">Question</h2>
+        <ul>
+            <!-- name attribute means you can only select one if the name is same for all options in list items -->
+            <!-- if you give different values to name, multiple can be selected -->
+            <li>
+                <input type="radio" id="a" name="answer" class="ans">
+                <label id="a_text" for="a">Option</label>
+            </li>
+            
+            <li>
+                <input type="radio" id="b" name="answer" class="ans">
+                <label id="b_text" for="b">Option</label>
+            </li>
+
+            <li>
+                <input type="radio" id="c" name="answer" class="ans">
+                <label id="c_text" for="c">Option</label>
+            </li>
+
+            <li>
+                <input type="radio" id="d" name="answer" class="ans">
+                <label id="d_text" for="d">Option</label>
+            </li>
+        </ul>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
+
+</body>
+</html>

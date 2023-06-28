@@ -1,0 +1,80 @@
+/* these are called selectors  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    width:100%;
+    height:100vh;
+    /* background-image: url('https://images.unsplash.com/photo-1517495306984-f84210f9daa8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2t5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1296&q=60');
+    background-size: cover;
+    background-repeat: no-repeat; */
+   
+    background: #acb6e5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71cebd, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7accbc, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+#addBtn{
+    position:fixed;
+    right: 10px;
+    top:10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+
+
+}
+
+.note{
+    
+    width:300px;
+    height:300px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+
+.tool{
+    
+    width: 100%;
+    background-color:black;
+    color: white;
+    padding: 12px;
+
+    /* need display: flex; to justify content  */
+    display: flex;
+    justify-content: end;
+}
+
+.tool i{
+    padding:5px;
+    cursor: pointer;
+}
+
+
+.note textarea{
+    
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+button{
+    background-color: transparent;
+}
+
